@@ -1,0 +1,29 @@
+* Các bước làm
+C8-9:
+* git checkout-b feature-PhanTienDung-rebase
+
+* git rebase -i HEAD~3
+- Nhấn phím i : để sang chế độ chỉnh sửa văn bản 
+	+ giữ dòng đầu 
+	+ xóa từ pick thay bằng s
+- Nhấn esc và :wq để lưu và thoát 
+- Nhấn i tiếp xóa hết commit và thêm 1 commit Git rebase
+- Nhấn esc và :wq để lưu và thoát
+
+* git push origin feature-PhanTienDung-rebase
+
+c10-11: 
+* git checkout--b feature-PhanTienDung-merge
+
+* git reset --hard HEAD~1
+ 
+c12-13:
+- thay đổi nội dung của các file1.txt,file2.txt và file3.txt
+* git add .
+* git commit -m"Git conflict"
+* git push origin feature-PhanTienDung-merge
+
+c14 :
+* git merge feature-PhanTienDung-rebase
+- conflic : fix conflic
+* git push origin feature-PhanTienDung-merge
